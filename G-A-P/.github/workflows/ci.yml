@@ -1,6 +1,10 @@
 name: FastAPI CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - master
 
 jobs:
   test:
