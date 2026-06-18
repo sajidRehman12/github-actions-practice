@@ -17,3 +17,8 @@ def test_read_main_again():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"Hello": "W"} 
+
+def test_read_main_againist():
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json() == {"Hello": "W"} 
